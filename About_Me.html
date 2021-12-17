@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- The Title of the page -->
+ <title>Ezzeldin Personal Website</title>
+ <!-- The CSS file linking -->
+ <link rel="stylesheet" href="style.css">
+ <!-- The the fonts linking -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+ <!-- Extention for the phone view in the style sheet. -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<!-- The body starter -->
+<body>
+ <!-- the section class to link it with the css file -->
+ <section class="header">
+  <!-- The nav for the pages -->
+    <nav>
+     <!-- for adding the logo and make it a home button -->
+      <a href="index.html"><img src="images/logo.png"></a>
+         <div class="nav-links" id="navLinks">
+           <!-- for the closeing icon ( phone view ) -->
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <!-- The pages that inside the website -->
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="About_Me.html">About Me</a></li>
+              <li><a href="Experience.html">Experience</a></li>
+              <li><a href="Contact_Me.html">Contact Me</a></li>
+            </ul>
+          </div>
+          <!-- for the menu icon ( phone view ) -->
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+      <section class="class about">
+
+        <div class="class main">
+          <div class="class about-text">
+            <h1>About Me</h1>
+            <h4>Cyper Security Specialist</h4>
+            <p>Hello...I'm Ezzledin Ahmed, I'm 20 Years old, and I'm still student at British University of Bahrain which cooperate with University of Salford Manchester.
+              <br>
+              I'm studing Cyber Security Internationally, I also has worked in multiple jobs and positions shuch as Admin Assistant with Tegdar Co.
+              <br><br>
+              I've choose the Cyber Security Major for multible reasons, the most important one is the Future and my passion to learn the penetration testing and how its works.<br><br> Also, to take the knowledge about the "Hackers", and how can i stop them.
+            </p>
+            <a href="Contact_Me.html" class="button">Let's Talk</a>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="about-l">
+        <!-- Heading -->
+          <h1>▼ More Information ▼</h1>
+          <div class="about-row">
+            <div class="about-col">
+              <h3>▼ My Education ▼<br>▔▔▔▔</h3>
+              <p>▼ Bachelor's in Cyber Security International<br>▸ British University of Bahrain - Salford<br>▸ 01/2021 - Present.<br><br>▔▔▔▔▔▔▔▔▔▔▔▔▔▔<br>▼ High School - Natural Since
+                 <br>▸ Olaya High School - Saudi Arabia <br> ▸ 03/2016 - 05/2019.
+              </p>
+            </div>
+            <!-- Class to add it to the Css -->
+            <div class="about-col">
+              <!-- The &ensp; for adding 2 spaces -->
+              <h3>▼ My Skills ▼<br>▔▔▔</h3>
+              <p>▸ Microsoft Office. &ensp; ▸ Computer Skills. <br>▸ Customer service & Care.<br>▸ Ability to work in a team.<br>▸ Ability to Work Under Pressure.<br>▸ Flexibility and Adaptability.<br>▸ Time management.<br>▸ Easy to Communicate.<br>▸ Very Fast Learner.</p>
+            </div>
+            <div class="about-col">
+              <h3>▼ My Intrests ▼<br>▔▔▔</h3>
+              <p>▸ Learn New Computer Skills. <br>▸ Python 3 Programming.<br>▸ Creating Webpages using HTML & CSS.<br>▸ Swiming.<br>▸ Working while Studiyng.<br>▸ Bike Rider.<br>▸ Reading Books to improve My Knowledge.<br>▸ Design New Things For Fun.</p>
+            </div>
+          </div>
+      </section>
+
+ <!-- little javaScript code for showing and hiding the menu in the ( phone view ) -->
+ <script>
+  var navLink = document.getElementById("navLinks")
+  function showMenu(){
+    navLinks.style.right = "0";
+  }
+    function hideMenu(){
+    navLinks.style.right = "-200";
+  }
+  </script>
+
+ 
+<!---The Footer-->
+  
+<section class="footer">
+<div class="icons">
+  <i class="fa fa-linkedin"></i>
+  <i class="fa fa-instagram"></i>
+  <i class="fa fa-twitter"></i>
+</div>
+<p>Made with <i class="fa fa-heart-o"></i> By Ezzeldin Ahmed<br>2021</p>
+</section>
+<!-- The body Ender -->
+</body>
+</html>

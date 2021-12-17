@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- The Title of the page -->
+ <title>Ezzeldin Personal Website</title>
+ <!-- The CSS file linking -->
+ <link rel="stylesheet" href="style.css">
+ <!-- The the fonts linking -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+ <!-- Extention for the phone view in the style sheet. -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<!-- The body starter -->
+<body>
+ <!-- the section class to link it with the css file -->
+ <section class="header">
+  <!-- The nav for the pages -->
+    <nav>
+     <!-- for adding the logo and make it a home button -->
+      <a href="index.html"><img src="images/logo.png"></a>
+         <div class="nav-links" id="navLinks">
+           <!-- for the closeing icon ( phone view ) -->
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <!-- The pages that inside the website -->
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="About_Me.html">About Me</a></li>
+              <li><a href="Experience.html">Experience</a></li>
+              <li><a href="Contact_Me.html">Contact Me</a></li>
+            </ul>
+          </div>
+          <!-- for the menu icon ( phone view ) -->
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <!-- the text box for the home screen that contain the welcoming + the paragraph -->
+  <div class="text-box">
+   <h1>Welcome to my Personal Page</h1>
+   <p>Here you'll found evreything about me, such as my experince, skills, intrests and more..</p>
+   <a href="About_Me.html" class="ex-btn">Explore Me</a>
+  </div>
+
+ </section>
+
+
+
+ <!-- little javaScript code for showing and hiding the menu in the ( phone view ) -->
+ <script>
+  var navLink = document.getElementById("navLinks")
+  function showMenu(){
+    navLinks.style.right = "0";
+  }
+    function hideMenu(){
+    navLinks.style.right = "-200";
+  }
+  </script>
+
+  <!---Emoployee Comments-->
+<section class="Employee">
+<h1>ًWhat did the Past-Employees say</h1>
+<p>Here you'll found the Past-Employees Comment.</p>
+<!---the row for the Css-->
+<div class="row">
+  <div class="Employee-col">
+    <!---First perosn pic-->
+    <img src="images/female.png">
+    <div>
+      <p>It was a pleasure to having you even for a that short period. Hope to see you around in the future.<br>Wish you the best of luck.<br>Thank you.</p>
+      <h3>Majdoline</h3>
+    </div>
+  </div>
+  <div class="Employee-col">
+    <!---Second perosn pic-->
+    <img src="images/male.png">
+    <div>
+      <p>It was a pleasure to having you even for a that short period. Hope to see you around in the future.<br>Wish you the best of luck.<br>Thank you.</p>
+      <h3>Najim Bin Zeyad</h3>
+    </div>
+  </div>
+</div>
+</section>
+
+<!---The Footer-->
+<section class="footer">
+  <!---The icons class for the css -->
+<div class="icons">
+  <!---Social Media icons-->
+  <i class="fa fa-linkedin"></i>
+  <i class="fa fa-instagram"></i>
+  <i class="fa fa-twitter"></i>
+</div>
+<!---Heart icon-->
+<p>Made with <i class="fa fa-heart-o"></i> By Ezzeldin Ahmed<br>2021</p>
+</section>
+<!-- The body Ender -->
+</body>
+</html>

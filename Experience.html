@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- The Title of the page -->
+ <title>My Experience</title>
+ <!-- The CSS file linking -->
+ <link rel="stylesheet" href="style.css">
+ <!-- The the fonts linking -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+ <!-- Extention for the phone view in the style sheet. -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<!-- The body starter -->
+<body>
+ <!-- the section class to link it with the css file -->
+ <section class="header">
+  <!-- The nav for the pages -->
+    <nav>
+     <!-- for adding the logo and make it a home button -->
+      <a href="index.html"><img src="images/logo.png"></a>
+         <div class="nav-links" id="navLinks">
+           <!-- for the closeing icon ( phone view ) -->
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <!-- The pages that inside the website -->
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="About_Me.html">About Me</a></li>
+              <li><a href="Experience.html">Experience</a></li>
+              <li><a href="Contact_Me.html">Contact Me</a></li>
+            </ul>
+          </div>
+          <!-- for the menu icon ( phone view ) -->
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <!-- The Experience page content -->
+    <section class="experience">
+      <!-- Heading -->
+        <h1>My Experience's</h1>
+        <!-- Paragraph -->
+        <p>Here You'll found All my Job Experience's</p>
+        <div class="row">
+          <div class="experience-col">
+            <h3>Admin Assistant</h3>
+            <p>▔▔▔▔▔<br>01/2019 - 01/2020 | Tegdar Co.<br>☑ Organize and coordinate work and appointments.<br>☑ collect and organize the candidates resumes and submit it to the HR manager.<br>☑ Follow up on banking matters.<br>☑ Preparing monthly reports.</p>
+          </div>
+          <!-- Class to add it to the Css -->
+          <div class="experience-col">
+            <h3>Time-Share Sales</h3>
+            <p>▔▔▔▔▔<br>02/2021 - 09/2021 | First Gulf Co.<br>☑ Customer Service.<br>☑ Reach the monthly target.<br>☑ present the products for the clients.<br>☑ Make the clients trust in the Company.<br>☑ Prepare monthly reports about the sales.</p>
+          </div>
+          <div class="experience-col">
+            <h3>Customer service & Care</h3>
+            <p>▔▔▔▔▔<br>04/2017 - 01/2019 | Najim Fitness Co.<br>☑ Customer service and subscribers.<br>☑ Preparing monthly reports.<br>☑ Coordinate work and customer appointments.<br>☑ replying back to the customer inquiries.<br>☑ closing deals and receive payments.</p>
+          </div>
+        </div>
+    </section>
+ </section>
+
+
+
+ <!-- little javaScript code for showing and hiding the menu in the ( phone view ) -->
+ <script>
+  var navLink = document.getElementById("navLinks")
+  function showMenu(){
+    navLinks.style.right = "0";
+  }
+    function hideMenu(){
+    navLinks.style.right = "-200";
+  }
+  </script>
+
+ 
+<!---The Footer-->
+<section class="footer">
+  <!---The icons class for the css -->
+<div class="icons">
+  <!---Social Media icons-->
+  <i class="fa fa-linkedin"></i>
+  <i class="fa fa-instagram"></i>
+  <i class="fa fa-twitter"></i>
+</div>
+<!---Heart icon-->
+<p>Made with <i class="fa fa-heart-o"></i> By Ezzeldin Ahmed<br>2021</p>
+</section>
+<!-- The body Ender -->
+</body>
+</html>
